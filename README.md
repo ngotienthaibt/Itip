@@ -31,21 +31,20 @@ Là một plugin gọn nhẹ  giúp bạn tạo ra tooltip đẹp một cách nh
 ```
 
 Trong đó option có thể là đối tượng hoặc hàm cần thực thi.
-```
 **Các thuộc tính của option:**
-	**position:** Xác định vị trí xuất hiện của Tooltip, gồm các giá trị left, right, top, bottom, LorR (tự động hiển thi bên trái hay phải dựa vào độ rộng của trình duyệt). Mặc định là 'top'.
-	**content:**   Chuỗi chứa nội dung của tooltip . Bạn có thể sủ dung data-Itip để truyền nội dung cho tooltip, nếu bạn sử dụng content nội dung của data-Itip sẽ được bỏ qua, bạn nên sử dụng content nếu nội dung bạn truyền vào tooltip có chứa các thẻ html. Mặc định content có giá trị là false.
-	**autoClose:** (true,false) tooltip sẽ tự động đóng khi mouseleaver hoặc khi click, mặc định là true.
-	**triggerBy:** ('hover' ,'click') Sự kiện kích hoạt tooltip.
-	**animate:**  (string) Chuỗi class cho hiệu ứng của animate.css mà bạn muốn sử dụng cho tooltip. Bạn có thể tìm ở đây
-	**minWidth :**  Độ dài tối đa của tooltip, vd: "100", "200".Mặc đinh là "100", đơn vị px.
-	**maxWidth :**  Độ dài tối thiểu của tooltip, vd: "100", "200".Mặc đinh là "150", đơn vị px.
-	**AfterOpen:** Hàm thực hiện sau khi tooltip xuất hiện.
-	**AfterClose:** Hàm thực hiện sau khi tooltip biến mất.
+	* position: Xác định vị trí xuất hiện của Tooltip, gồm các giá trị left, right, top, bottom, LorR (tự động hiển thi bên trái hay phải dựa vào độ rộng của trình duyệt). Mặc định là 'top'.
+	* content:   Chuỗi chứa nội dung của tooltip . Bạn có thể sủ dung data-Itip để truyền nội dung cho tooltip, nếu bạn sử dụng content nội dung của data-Itip sẽ được bỏ qua, bạn nên sử dụng content nếu nội dung bạn truyền vào tooltip có chứa các thẻ html. Mặc định content có giá trị là false.
+	* autoClose: (true,false) tooltip sẽ tự động đóng khi mouseleaver hoặc khi click, mặc định là true.
+	* triggerBy: ('hover' ,'click') Sự kiện kích hoạt tooltip.
+	*animate:  (string) Chuỗi class cho hiệu ứng của animate.css mà bạn muốn sử dụng cho tooltip. Bạn có thể tìm ở đây
+	* minWidth :  Độ dài tối đa của tooltip, vd: "100", "200".Mặc đinh là "100", đơn vị px.
+	* maxWidth :  Độ dài tối thiểu của tooltip, vd: "100", "200".Mặc đinh là "150", đơn vị px.
+	* AfterOpen: Hàm thực hiện sau khi tooltip xuất hiện.
+	* AfterClose: Hàm thực hiện sau khi tooltip biến mất.
 Các hàm có thể truyền vào option.
-	**showItip:** Kích hoạt tooltip xuất hiện.
-	**hideItip:** Kích hoạt ẩn tooltip.
-```
+	* showItip: Kích hoạt tooltip xuất hiện.
+	* hideItip: Kích hoạt ẩn tooltip.
+
 Một số demo về sử dụng Itip.
 
 
