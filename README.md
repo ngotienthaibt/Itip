@@ -26,11 +26,12 @@ Là một plugin gọn nhẹ  giúp bạn tạo ra tooltip đẹp một cách nh
 ```
   Như vậy bạn đã có một tooltip đơn giản nếu bạn muốn custom một số chức năng hãy tới bước 4.
 4.Các tính năng của tooltip.
-
+```javascript
  $('myElement').Itip(option);
+```
 
 Trong đó option có thể là đối tượng hoặc hàm cần thực thi.
-
+```
 **Các thuộc tính của option:**
 	**position:** Xác định vị trí xuất hiện của Tooltip, gồm các giá trị left, right, top, bottom, LorR (tự động hiển thi bên trái hay phải dựa vào độ rộng của trình duyệt). Mặc định là 'top'.
 	**content:**   Chuỗi chứa nội dung của tooltip . Bạn có thể sủ dung data-Itip để truyền nội dung cho tooltip, nếu bạn sử dụng content nội dung của data-Itip sẽ được bỏ qua, bạn nên sử dụng content nếu nội dung bạn truyền vào tooltip có chứa các thẻ html. Mặc định content có giá trị là false.
@@ -44,7 +45,7 @@ Trong đó option có thể là đối tượng hoặc hàm cần thực thi.
 Các hàm có thể truyền vào option.
 	**showItip:** Kích hoạt tooltip xuất hiện.
 	**hideItip:** Kích hoạt ẩn tooltip.
-
+```
 Một số demo về sử dụng Itip.
 
 
