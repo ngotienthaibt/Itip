@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>demo Itip</title>
+	<link rel="stylesheet" href="css/demo.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/Itip.css">
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="js/jQuery.Itip.js"></script>
+	<link rel="stylesheet" href="styles/default.css">
+	<script src="highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<!-- <div class="demo-wrap">
+	<div class="item"></div>
+	<h2></h2>
+	<p></p>
+</div> -->
+<body>
+	<header>
+		<h1> Itip - Tooltip jQuery plugin</h1>
+		<p>Là một plugin gọn nhẹ  giúp bạn tạo ra tooltip đẹp một cách nhanh chóng với nhiều hiệu ứng đẹp từ animate.css.</p>
+	</header>
+	<section id="main-content">
+		<div class="demo-wrap">
+			<div class="item" id="default" data-Itip="noi dung cua tooltip Lorem ipsum dolor sit amet.">hover</div>
+			<h2>Default</h2>
+			
+				<pre>
+					<code class="jvascript">
+				
+$('#default').Itip();
+
+					</code>
+				</pre>
+			
+		</div>
+
+		<div class="demo-wrap">
+			<div class="item" data-Itip="noi dung cua tooltip" id="custom">press key</div>
+			<h2>Custom show/hide triggers</h2>
+				<pre>
+					<code class="jvascript">
+				
+	$(window).bind({
+		keydown : function() {
+			$("#custom").Itip({triggerBy: "no"});
+			$("#custom").Itip('showItip');
+		},
+		keyup: function(){
+			$("#custom").Itip('hideItip');
+		}
+	});
+
+					</code>
+				</pre>
+		</div>
+
+		<div class="demo-wrap">
+			<div id="Interaction"   class="item">hover</div>
+			<h2>Interaction with tooltips</h2>
+				<pre>
+					<code class="jvascript">
+				
+	$('#Interaction').Itip({content:'this is a &gt;a href="http://google.com">link&gt;/a>',interaction: true});
+
+					</code>
+				</pre>
+		</div>
+
+		<div class="demo-wrap">
+			<div class="item" data-Itip="noi dung cua tooltip" id="posi">hover</div>
+			<h2>Auto pull left or right </h2>
+				<pre>
+					<code class="jvascript">
+				
+$('#posi').Itip({position: 'LorR'});
+
+					</code>
+				</pre>
+		</div>
+
+		<div class="demo-wrap">
+			<div class="item" id="htmlcontent">hover</div>
+			<h2>Tooltip with html content</h2>
+				<pre>
+					<code class="jvascript">
+				
+	$('#htmlcontent').Itip({
+		position: 'right',
+		content: '&gt;img src="http://pbs.twimg.com/profile_images/2284174872/7df3h38zabcvjylnyfe3.png" width="50" height="50" alt="ntt" />&gt;p>ngotienthaibt@gmail.com&gt;p/>',
+		minWidth: 'auto',
+		maxWidth: 'auto'
+
+	});
+
+					</code>
+				</pre>
+		</div>
+
+		<div class="demo-wrap">
+			<div class="item" id="callBack">hover</div>
+			<h2>Tooltip width callback</h2>
+				<pre>
+					<code class="jvascript">
+				
+	$("#callBack").Itip({
+		AfterOpen: function(){
+			alert("call back after open");
+		}
+	});
+
+					</code>
+				</pre>
+		</div>
+	</section>
+
+	<footer>
+		<a href="http://thaitienblog.com/cv.jpg">Ngô Tiến Thái</a>
+		<a href="https://github.com/ngotienthaibt/Itip">Xem project trên github</a>
+	</footer>
+<script>
+	$('#default').Itip();
+
+	//#custom
+
+	$(window).bind({
+		
+		keydown : function() {
+		
+			$("#custom").Itip({triggerBy: "no"});
+			$("#custom").Itip('showItip');
+		},
+		keyup: function(){
+			$("#custom").Itip('hideItip');
+		}
+	});
+
+
+	$('#Interaction').Itip({content:'this is a <a href="http://google.com">link</a>',interaction: true});
+	$('#posi').Itip({position: 'LorR'});//htmlcontent
+	$('#htmlcontent').Itip({
+		position: 'right',
+		content: '<img src="http://pbs.twimg.com/profile_images/2284174872/7df3h38zabcvjylnyfe3.png" width="50" height="50" alt="ntt" /><p>ngotienthaibt@gmail.com<p/>',
+		minWidth: 'auto',
+		maxWidth: 'auto'
+
+	});
+	$("#callBack").Itip({
+		AfterOpen: function(){
+			alert("call back after open");
+		}
+	});
+</script>
+	
+</body>
+</html>
