@@ -1,11 +1,11 @@
 #Itip - Tooltip jQuery plugin
-Là một plugin gọn nhẹ  giúp bạn tạo ra tooltip đẹp một cách nhanh chóng với nhiều hiệu ứng đẹp từ animate.css.
+Là một plugin gọn nhẹ  giúp bạn tạo ra tooltip đẹp một cách nhanh chóng với nhiều hiệu ứng đẹp từ [animate.css](http://daneden.github.io/animate.css/).
 
 ##Cách sử dụng: 
 
 1.Download file về và copy 2 file Itip.css, jQuery.Itip.js vào thư mục thích hợp trong dự án của bạn.
 
-2.Chèn hai file này vào file html bạn cần sử dụng tooltip, chú ý đường đẫn phải sửa lại cho phù hợp.Chú ý phải đặt script của jQuery.Itip.js sau file thư viện jQuery, nếu bạn muốn có thêm nhiều hiệu ứng dẹp mắt cho tooltip hãy chèn thêm file animate.css (dowload bản mới nhất ở đây).
+2.Chèn hai file này vào file html bạn cần sử dụng tooltip, chú ý đường đẫn phải sửa lại cho phù hợp, phải đặt script của jQuery.Itip.js sau file thư viện jQuery, nếu bạn muốn có thêm nhiều hiệu ứng đẹp mắt cho tooltip hãy chèn thêm file animate.css (dowload bản mới nhất ở [đây](http://daneden.github.io/animate.css/)).
 ```html
 	<head>
 		<script type='text/javascript'src='jQuery.js'></script>
@@ -48,7 +48,7 @@ Trong đó option có thể là đối tượng hoặc hàm cần thực thi.
 	* showItip: Kích hoạt tooltip xuất hiện.
 	* hideItip: Kích hoạt ẩn tooltip.
 
-Một số demo về sử dụng Itip.
+[Một số demo về sử dụng Itip](http://thaitienblog.com/Itip_jQuery_plugin/demo.html#).
 
 
 
