@@ -41,7 +41,7 @@ Trong đó option có thể là đối tượng hoặc hàm cần thực thi.
 	* maxWidth :  Độ dài tối thiểu của tooltip, vd: "100", "200".Mặc đinh là "150", đơn vị px.
 	* AfterOpen: Hàm thực hiện sau khi tooltip xuất hiện.
 	* AfterClose: Hàm thực hiện sau khi tooltip biến mất.
-Các hàm có thể truyền vào option.
+* Các hàm có thể truyền vào option.
 	* showItip: Kích hoạt tooltip xuất hiện.
 	* hideItip: Kích hoạt ẩn tooltip.
 
