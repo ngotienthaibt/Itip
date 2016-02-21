@@ -48,7 +48,7 @@ Trong đó option có thể là đối tượng hoặc hàm cần thực thi.
 	* showItip: Kích hoạt tooltip xuất hiện.
 	* hideItip: Kích hoạt ẩn tooltip.
 
-[Một số demo về sử dụng Itip](http://thaitienblog.com/Itip_jQuery_plugin/demo.html#).
+[Một số demo về sử dụng Itip](http://thaimaize.com/profile/responsivehtml/Itip_jQuery_plugin/demo.html#).
 
 
 
